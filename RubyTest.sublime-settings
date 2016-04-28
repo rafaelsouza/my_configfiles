@@ -1,0 +1,8 @@
+{
+  "run_rspec_command": "rspec {relative_path}",
+  "run_single_rspec_command": "rspec {relative_path}:{line_number}",
+
+  //"check_for_spring": true,
+  "check_for_rvm": true,
+  "check_for_bundler": true,
+}
