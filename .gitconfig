@@ -1,0 +1,25 @@
+[user]
+	name = Rafael Souza
+	email = rsouza@carecloud.com
+[color]
+	ui = auto
+
+[core]
+	editor = subl -n -w
+[push]
+	default = tracking
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	today = log --since=midnight --author='Rafael Souza' --oneline
+  ds = diff --staged      # git ds - diff your staged changes == review before committing.
+  st = status -sb 
+  ls = "log --pretty=format:\"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\" --decorate --date=short"
+  lsv = "log --pretty=format:\"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\" --decorate --date=short --numstat"
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  lh = log --graph
+  
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
