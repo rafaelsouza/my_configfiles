@@ -75,7 +75,7 @@ function cd_clinical_api {
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler brew gem zeus sublime git-extras github jira history)
+plugins=(git bundler brew zeus sublime git-extras github history)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,21 +104,15 @@ export RUBY_GC_MALLOC_LIMIT=128000000
 export RUBY_GC_OLDMALLOC_LIMIT=128000000
 export LD_PRELOAD=/usr/local/opt/jemalloc
 
-export SSL_WEBSERVICES_URL=http://myservices.carecloud.local:3001
-
-export CC_ROOT=~/projects
-export PG_DATA=/usr/local/var/postgres
-#. $CC_ROOT/localhost_env/scripts/ccdev.sh
-
 #AWS
 export AWS_CONFIG_FILE=~/.aws/credentials
 
 #DOCKER
 
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/rafaelsouza/.docker/machine/machines/default"
-export DOCKER_MACHINE_NAME="default"
+#export DOCKER_TLS_VERIFY="1"
+#export DOCKER_HOST="tcp://192.168.99.100:2376"
+#export DOCKER_CERT_PATH="/Users/rafaelsouza/.docker/machine/machines/default"
+#export DOCKER_MACHINE_NAME="default"
 
 #export RUBYOPT=-rbumbler/go
 
@@ -129,5 +123,5 @@ export PATH=/usr/local/bin:/opt/chefdk/bin:$PATH:/Users/rafaelsouza/.rvm/gems/ru
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-export NVM_DIR="/Users/rafaelsouza/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="/Users/rafaelsouza/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
